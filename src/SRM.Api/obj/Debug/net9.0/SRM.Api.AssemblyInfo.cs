@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SRM.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75793a22d2b00ff2042bfc2f818f1f127df646fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("SRM.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SRM.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

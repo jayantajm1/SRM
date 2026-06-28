@@ -32,3 +32,4 @@ D:\SRM\src\SRM.Api\obj\Debug\net9.0\SRM.Api.pdb
 D:\SRM\src\SRM.Api\obj\Debug\net9.0\SRM.Api.genruntimeconfig.cache
 D:\SRM\src\SRM.Api\obj\Debug\net9.0\ref\SRM.Api.dll
 D:\SRM\src\SRM.Api\bin\Debug\net9.0\Npgsql.dll
+D:\SRM\src\SRM.Api\obj\Debug\net9.0\SRM.Api.sourcelink.json

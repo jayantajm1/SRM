@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Vwi6DKK4GDY=",
+  "dgSpecHash": "4WMqxUzgKEM=",
   "success": true,
   "projectFilePath": "D:\\SRM\\tests\\SRM.Tests\\SRM.Tests.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.17\\microsoft.aspnetcore.openapi.9.0.17.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.testhost\\9.0.17\\microsoft.aspnetcore.testhost.9.0.17.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.17\\microsoft.extensions.configuration.9.0.17.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.17\\microsoft.extensions.configuration.abstractions.9.0.17.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.17\\microsoft.extensions.configuration.binder.9.0.17.nupkg.sha512",
@@ -44,6 +45,10 @@
     "C:\\Users\\hp\\.nuget\\packages\\microsoft.testplatform.testhost\\17.12.0\\microsoft.testplatform.testhost.17.12.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\npgsql\\8.0.5\\npgsql.8.0.5.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.17\\system.diagnostics.eventlog.9.0.17.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\xunit\\2.9.2\\xunit.2.9.2.nupkg.sha512",
