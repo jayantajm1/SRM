@@ -446,3 +446,7 @@ D:\SRM\tests\SRM.Tests\obj\Debug\net9.0\SRM.Tests.pdb
 D:\SRM\tests\SRM.Tests\obj\Debug\net9.0\SRM.Tests.genruntimeconfig.cache
 D:\SRM\tests\SRM.Tests\obj\Debug\net9.0\ref\SRM.Tests.dll
 D:\SRM\tests\SRM.Tests\bin\Debug\net9.0\Npgsql.dll
+D:\SRM\tests\SRM.Tests\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\SRM\tests\SRM.Tests\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\SRM\tests\SRM.Tests\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\SRM\tests\SRM.Tests\obj\Debug\net9.0\SRM.Tests.sourcelink.json
