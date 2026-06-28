@@ -1,0 +1,158 @@
+<main class="shell">
+  <section class="hero">
+    <div class="badge">WhatsApp-first CRM</div>
+    <h1>{{ title() }}</h1>
+    <p class="lede">
+      The easiest WhatsApp CRM for small businesses, built around customer history, follow-ups, and a simple operations dashboard.
+    </p>
+
+    @if (profile(); as business) {
+      <div class="profile-card">
+        <div>
+          <p class="eyebrow">Business profile</p>
+          <h2>{{ business.businessName }}</h2>
+          <p class="profile-meta">{{ business.industry }} · {{ business.city }} · {{ business.timezone }}</p>
+        </div>
+
+        <div class="profile-grid">
+          <div>
+            <span class="label">Owner</span>
+            <strong>{{ business.ownerName }}</strong>
+          </div>
+          <div>
+            <span class="label">Phone</span>
+            <strong>{{ business.primaryPhoneNumber }}</strong>
+          </div>
+          <div>
+            <span class="label">Plan</span>
+            <strong>{{ business.planName }}</strong>
+          </div>
+          <div>
+            <span class="label">Team size</span>
+            <strong>{{ business.teamSize }}</strong>
+          </div>
+        </div>
+      </div>
+    }
+
+    <div class="highlights" aria-label="Project highlights">
+      @for (item of highlights; track item) {
+        <article class="highlight-card">
+          <span class="dot"></span>
+          <span>{{ item }}</span>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="panel status-panel">
+    <div class="panel-header">
+      <div>
+        <p class="eyebrow">Live dashboard</p>
+        <h2>Today at a glance</h2>
+      </div>
+
+      <button type="button" class="refresh-button" (click)="loadStatus()">Refresh</button>
+    </div>
+
+    @if (loading()) {
+      <div class="state-card">Loading WhatsFlow dashboard...</div>
+    } @else if (error()) {
+      <div class="state-card state-error">{{ error() }}</div>
+    } @else if (summary(); as dashboard) {
+      <div class="status-grid metrics-grid">
+        <div>
+          <span class="label">Today's follow-ups</span>
+          <strong>{{ dashboard.todayFollowUps }}</strong>
+        </div>
+        <div>
+          <span class="label">Upcoming appointments</span>
+          <strong>{{ dashboard.upcomingAppointments }}</strong>
+        </div>
+        <div>
+          <span class="label">Revenue</span>
+          <strong>₹{{ dashboard.monthlyRevenue | number:'1.0-0' }}</strong>
+        </div>
+        <div>
+          <span class="label">Pending payments</span>
+          <strong>₹{{ dashboard.pendingPayments | number:'1.0-0' }}</strong>
+        </div>
+        <div>
+          <span class="label">Active customers</span>
+          <strong>{{ dashboard.activeCustomers }}</strong>
+        </div>
+        <div>
+          <span class="label">New leads</span>
+          <strong>{{ dashboard.newLeads }}</strong>
+        </div>
+      </div>
+
+      <div class="status-grid insight-grid">
+        <div>
+          <span class="label">Broadcast status</span>
+          <strong>{{ dashboard.broadcastStatus }}</strong>
+        </div>
+        <div>
+          <span class="label">Lead conversion</span>
+          <strong>{{ dashboard.leadConversionRate }}%</strong>
+        </div>
+        <div>
+          <span class="label">Customer growth</span>
+          <strong>{{ dashboard.customerGrowthRate }}%</strong>
+        </div>
+      </div>
+
+      <div class="dual-grid">
+        <section class="subpanel">
+          <div class="panel-header compact">
+            <div>
+              <p class="eyebrow">Recent customers</p>
+              <h3>Conversation-linked contacts</h3>
+            </div>
+          </div>
+
+          <div class="customer-list">
+            @for (customer of dashboard.recentCustomers; track customer.id) {
+              <article class="customer-card">
+                <div>
+                  <strong>{{ customer.name }}</strong>
+                  <p>{{ customer.industry }} · {{ customer.city }}</p>
+                </div>
+                <div class="customer-meta">
+                  <span>{{ customer.status }}</span>
+                  <small>{{ customer.phoneNumber }}</small>
+                </div>
+                <div class="label-row">
+                  @for (label of customer.labels; track label) {
+                    <span class="chip">{{ label }}</span>
+                  }
+                </div>
+              </article>
+            }
+          </div>
+        </section>
+
+        <section class="subpanel">
+          <div class="panel-header compact">
+            <div>
+              <p class="eyebrow">Recent activity</p>
+              <h3>Latest business movement</h3>
+            </div>
+          </div>
+
+          <div class="activity-list">
+            @for (item of dashboard.recentActivities; track item.occurredAtUtc) {
+              <article class="activity-card">
+                <span class="dot"></span>
+                <div>
+                  <strong>{{ item.message }}</strong>
+                  <p>{{ item.occurredAtUtc }}</p>
+                </div>
+              </article>
+            }
+          </div>
+        </section>
+      </div>
+    }
+  </section>
+</main>
