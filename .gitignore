@@ -1,0 +1,74 @@
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+artifacts/
+
+# Dotnet publish
+publish/
+
+# User secrets
+secrets.json
+secrets.*
+
+# Logs
+*.log
+logs/
+
+# Test results / coverage
+TestResults/
+coverage/
+coverage*.json
+*.coverage
+*.coveragexml
+
+# Rider / JetBrains
+.idea/
+*.iml
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular / frontend builds
+dist/
+**/dist/
+build/
+out-tsc/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*~
+*.swp
+
+# Docker overrides
+docker-compose.override.yml
